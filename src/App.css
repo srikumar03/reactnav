@@ -1,0 +1,59 @@
+body {
+  box-sizing: border-box;
+  clear: both;
+  color: rgb(255, 255, 255);
+}
+
+header {
+  padding: 30px;
+  background-color: rgb(0, 0, 0);
+  height: 40px;
+}
+
+.sideNav {
+  width: 240px;
+  background-color: black;
+  position: absolute;
+  height: 95vh;
+  padding: 0 30px;
+  transition: all 0.5s;
+  left: -100%;
+}
+
+.sideNav ul {
+  padding: 0;
+}
+.sideNav ul li {
+  list-style-type: none;
+}
+
+.sideNav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: aliceblue;
+  display: block;
+  border-radius: 6px;
+  padding: 10px 15px;
+}
+
+.sideNav ul li a:hover,
+.sideNav ul li a:active {
+  background-color: rgb(70, 69, 69);
+}
+
+.sideNav.active {
+  left: 0;
+}
+
+header svg {
+  font-size: 30px;
+}
+
+.main {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #c9c9c9;
+}
